@@ -18,7 +18,6 @@ return [
     'title' => 'Asia Golf Travel',
     'url' => 'www.asiagolftravel.com',
     'web' => 2,
-    'contakeme_web' => 1,
 
 
     /*
