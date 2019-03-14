@@ -7,10 +7,6 @@
 <?php use App\component\Content;?>
 @section('content')
 
-
-
-
-
   <!--==========================
     Header
   ============================-->
@@ -91,6 +87,21 @@
                             <div class="form-group">
                                 <textarea class="form-control" name="message" placeholder="Type message" cols="7" rows="4"></textarea>
                             </div>
+
+                            <div class="form-group" id="notrobot" style="">
+
+                                <input  type="text" id="num1" class="form-control textbox_color"   style="float: left; width: 20%; text-align: center;" disabled>
+
+                                <label style="font-size: 25px;float: left; width: 10%;font-weight: 500;
+                                text-align: center;">+</label>
+                                <input  type="text" id="num2" class="form-control textbox_color"  style="float: left; width: 20%; text-align: center;" disabled >
+                                <label style="font-size: 25px;float: left;width: 10%;font-weight: 500;
+                                text-align: center;">=</label>
+
+                                <input type="text" name="myResult" id="myResult" class="form-control textbox_color" placeholder="" required style="width: 40%;">
+
+                            </div>
+
                         </div>
                         <div class="col-md-12">
                             <center>
@@ -143,6 +154,51 @@
         </div>
     </div>
             <div class="clearfix"></div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+    var datanum1=Math.floor(Math.random() * 11)+1;
+    var datanum2=Math.floor(Math.random() * 11)+1;
+  $('#num1').val(datanum1);
+  $('#num2').val(datanum2);
+  $('#myResult').on('keyup',function(){
+
+    var getdata=$(this).val();
+    var total = datanum1 + datanum2;
+    
+    
+    if (getdata == total) {
+      $('#myResult').removeClass('addcol1');
+         $('#btn').on('click',function(){
+         $('#myResult').val(getdata);
+    
+      });
+    }
+    else{
+       $('#myResult').addClass('addcol1');
+       $('#myResult').attr('required', true);
+
+       $('#btn').on('click',function(){
+         $('#myResult').val('');
+    
+        });
+    }
+  });
+  $('#notrobot').css({'display':'none'});
+  $('#eshow').on('keyup', function(){
+      var eshow= $('#eshow').val();
+        if (eshow.length>0) {
+          $('#notrobot').css({'display':'block'});
+    console.log(eshow);
+  }
+  else{
+     $('#notrobot').css({'display':'none'});
+  }
+  });
+
+});
+</script>
 <script>
 function openPage(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
