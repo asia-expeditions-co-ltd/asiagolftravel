@@ -82,7 +82,7 @@
                                 <input type="text" name="phone" class="form-control textbox_color" placeholder="Phone: +95 (1) 123 456 " required="">
                             </div>
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control textbox_color" placeholder="Email" required="">
+                                <input type="email" name="email" class="form-control textbox_color" placeholder="Email" required="" id="eshow">
                             </div>
                             <div class="form-group">
                                 <textarea class="form-control" name="message" placeholder="Type message" cols="7" rows="4"></textarea>
