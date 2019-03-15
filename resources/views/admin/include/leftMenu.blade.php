@@ -128,7 +128,7 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="admin/mailing?myselect=30&selectweb=asiagolftravel"><i class="fa fa-circle-o"></i>Mail</a></li>
+              <li><a href="{{route('getmailing',['myselect'=>'30','selectweb'=>'asiagolftravel'])}}"><i class="fa fa-circle-o"></i>Mail</a></li>
 
               <li><a href="{{route('getmailed')}}"><i class="fa fa-circle-o"></i>Mailed</a></li>
      

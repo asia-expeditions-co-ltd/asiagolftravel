@@ -26,12 +26,12 @@ use App\component\Content; ?>
 		                <th>Email</th>
 		                <th>Phone</th>
 		                <th>Type</th>
-		                <th>Ip</th>
 		                <th>CityName</th>
 		                <th>CountryName</th>
 		                <th>TimeZone</th>
 		                <th style="width: 80px;">Created_at</th>
 		                <th style="width: 80px;" class="text-right">Status</th>
+		                <th>Link</th>
 		            </tr>
 		        </thead>
 		        <tbody>
@@ -41,17 +41,24 @@ use App\component\Content; ?>
 		            	<td>{{$email->subscribeEmail}}</td>
 		            	<td>{{$email->phone}}</td>
 		            	<td>{{$email->type}}</td>
-		            	<td>{{$email->ip}}</td>
 		            	<td>{{$email->cityName}}</td>
 		            	<td>{{$email->countryName}}</td>
 		            	<td>{{$email->timezone}}</td>
-		            
 		            	<td style="width: 80px;">{{ date('Y-M-d', strtotime($email->created_at))}}</td>
 		            	<td style="width: 80px;" class="text-right">
 
 				    		<a data-action="datasub" data-id="{{$email->id}}" class="btnDelete btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></a>
 				    	
 		            	</td>
+		            	<td>
+		            	@if(isset($email->tour->slug)? $email->tour->slug: '')		            	
+		            	<a target="_blank" href="/golf-details/{{isset($email->tour->slug)? $email->tour->slug: ''}}" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-eye-open"></i></a>
+		            	@else
+		            	
+		                </td>
+		              
+
+		            	@endif
 		            </tr>
 		            @endforeach
 		        </tbody>

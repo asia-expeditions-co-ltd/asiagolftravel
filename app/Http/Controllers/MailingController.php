@@ -58,8 +58,6 @@ class MailingController extends Controller
   }
 
 
-  public function mailing_con(Request $re){}
-
   public function mail_send(Request $req){
 
     $data1 = $req->getwebname;

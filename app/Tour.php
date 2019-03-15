@@ -25,8 +25,11 @@ class Tour extends Model
     	return $this->belongsToMany(Web::class);
 
     }
+      public function subscribe(){
 
+        return $this->belongsTo(Subscribe::class);
 
+    }
 
     public function category(){
 
@@ -34,15 +37,11 @@ class Tour extends Model
 
     }
 
-
-
     public function country(){
 
     	return $this->belongsTo(Country::class);
 
     }
-
-
 
     public function province(){
 
@@ -50,15 +49,11 @@ class Tour extends Model
 
     }
 
-
-
     public function user(){
 
     	return $this->belongsTo(User::class);
 
     }
-
-
 
     public static function getcatTour( $cat_id, $web, $type = 1, $location = 126){
 

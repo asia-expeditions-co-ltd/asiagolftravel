@@ -129,8 +129,8 @@ Route::group(['middleware'=> 'isAdmin'], function(){
 
         Route::post('/delet_datal', 'AdminController@delete_data')->name('delete_data_sub');
         Route::post('/delete_count', 'AdminController@delete__counting')->name('delete__counting');
-        Route::get('/mailing', 'MailingController@getmailing')->name('getmailing');
-        Route::post('/mailing', 'MailingController@mailing_con')->name('mailing_con');
+        Route::get('/mail', 'MailingController@getmailing')->name('getmailing');
+        
         Route::post('/sendmail', 'MailingController@mail_send')->name('mail_send');
         Route::get('/mailed', 'MailingController@getmailed')->name('getmailed');
         Route::get('/search','MailingController@search')->name('research');

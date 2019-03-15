@@ -1213,31 +1213,3 @@ $("#search").on('keydown', function(e) {
     });
 </script>
 @endsection
-
-<!--  // var existingEntries = JSON.parse(localStorage.getItem("allEntries"));
- //        if(existingEntries == null) 
- //            existingEntries = [];
- //        var entry = {
- //             "ID": dataid,
- //        };
- //        // Save allEntries back to local storage
- //        existingEntries.push(entry);
- //        // var existingEntries = JSON.parse(localStorage.removeItem("allEntries"));
- //        localStorage.setItem("allEntries", JSON.stringify(existingEntries)); -->
-
-<!--  <script type="text/javascript">
-    $('#myselect').on('click',function(){
-            $value=$(this).val();
-      
-if ($value) {}else{$value=false;}
-           
-         $.ajax({type : 'get',
-            url : '{{route("mailing_con")}}',
-        data:{'mailing':$value},
-        success:function(data){            
-        },
-        error: function(){alert('error');   
-             return false;
-            },
-        });});
- </script> -->

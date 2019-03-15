@@ -24,15 +24,20 @@ class Subscribe extends Model
 
      public static function Email($email,$type){
 
-        return self::where(['subscribeEmail'=>$email, 'type'=>$type])->first();
+        return self::where(['subscribeEmail'=>$email, 'type'=>$type,])->first();
+
+    }
+     public static function Requstt($email,$type,$getde){
+
+        return self::where(['subscribeEmail'=>$email, 'type'=>$type,'created_at'=> $getde])->first();
 
     }
 
 
+      public function tour(){
 
-     public static function Type($type){
-
-        return self::where('type', $type)->first();
+        return $this->belongsTo(Tour::class);
+       
 
     }
 

@@ -150,6 +150,7 @@
                             </div>
 
                             <input type="hidden" name="title" value="{{isset($tour->title)? $tour->title: ''}}">
+                            <input type="hidden" name="t_id" value="{{isset($tour->id)? $tour->id: ''}}">
 
                             <input type="hidden" name="url" value="{{route('tourDetails', ['url'=> isset($tour->slug)? $tour->slug:''])}}">
 

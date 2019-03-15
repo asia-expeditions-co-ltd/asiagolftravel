@@ -7,6 +7,10 @@ use App\Subscribe;
 use Validator;
 use App\CountView;
 
+use Illuminate\Support\Facades\Mail;
+use \App\Mail\RequestTeeTime;
+use \App\Mail\Requesttravel;
+
 class SubscribeController extends Controller
 {
 
@@ -88,15 +92,18 @@ class SubscribeController extends Controller
 
     public function requesttraveling(Request $req){
 
+        // return $req->t_id;
+
          $dataip = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']));
 
         $validate = Validator::make($req->all(), [
             'email' =>  'required',
             'phone' =>  'required'
         ]);
+        $date=date("Y-m-d '00':'00':'00'");
 
         if (!$validate->fails()) {
-           if (!Subscribe::Email($req->email,'requesttraveling') ){
+           if (!Subscribe::Requstt($req->email,'requesttraveling',$date) ){
                 $adds = new Subscribe;
            
                 $adds->subscribeEmail = $req->email;
@@ -107,8 +114,18 @@ class SubscribeController extends Controller
                 $adds->cityName       = $dataip['geoplugin_city'];
                 $adds->countryName    = $dataip['geoplugin_countryName'];
                 $adds->timezone       = $dataip['geoplugin_timezone'];
-        
+                $adds->tour_id        = $req->t_id;
                 $adds->save();
+
+                $data = array(
+                    'email' =>$req->email , 
+                    'date'  =>$req->date ,
+                    'phone' =>$req->phone,
+                    'pax'   =>$req->pax_number,
+            );
+                // return [$data,$date];
+
+                Mail::to($req->email)->send(new Requesttravel($data));
                 return back()->with(['message' => 'Request Traveling Success']);
             }
             else{

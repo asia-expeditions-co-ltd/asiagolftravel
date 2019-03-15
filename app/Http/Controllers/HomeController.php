@@ -160,7 +160,7 @@ class HomeController extends Controller
     
     public function sendContact(Request $req){
 
-        $data = ['date'=>$req->date,
+        $data = ['date'=>date("Y-m-d H:i:s"),
                  'pax'=>$req->pax_number,
                  'url' => $req->url, 
                  'title'=> $req->title,
