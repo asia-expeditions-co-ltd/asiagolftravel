@@ -13,7 +13,7 @@
     <div class="mycontainer">
         <img src="/photos/share/amata.jpg" alt="Nature" style="width:100%;">
           <div class="text-block">
-            <h4 style="color: white; font-weight: 700;"> All @if($get_c->type==1)Tours & Golf Packages @elseif($get_c->type==2) Golf Courses @else Hotels & Resort  @endif  {{isset($get_c->country->country_name)? 'In '.$get_c->country->country_name: ''}} </h4>
+            <h4 style="color: white; font-weight: 700; padding-top: 15px;"> All @if($get_c->type==1)Tours & Golf Packages @elseif($get_c->type==2) Golf Courses @else Hotels & Resort  @endif  {{isset($get_c->country->country_name)? 'In '.$get_c->country->country_name: ''}} </h4>
            <!--  <p style="color: white;">What a beautiful sunrise</p> -->
          </div>
     </div>

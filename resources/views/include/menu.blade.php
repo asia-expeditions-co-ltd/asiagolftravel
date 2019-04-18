@@ -1,8 +1,8 @@
 
       <div class="header"> 
          <div class="txttop">
-             <i class="fa fa-phone"></i>&nbsp; +95 (1) 200 401 / (9) 506 2644 
-             <i class="fa fa-envelope-o"></i>&nbsp; info [at] asiagolftravel.com 
+          <!--    <i class="fa fa-phone"></i>&nbsp; +95 (1) 200 401 / (9) 506 2644  -->
+             <i class="fa fa-envelope-o"></i>&nbsp; info@asiagolftravel.com 
          </div> 
       </div>
 <header id="header">
@@ -20,7 +20,7 @@
           
             <li class="menu-has-children"><a href="#">DESTINATIONS</a>
               <ul>
-                @foreach(\App\Country::orderBy('country_name', 'DESC')->get() as $pro)  
+                @foreach(\App\Country::getdes_all() as $pro)  
                 <li>
                   <a href="{{route('getDest')}}?location={{$pro->id}}">{{ $pro->country_name }}</a>
                 </li>

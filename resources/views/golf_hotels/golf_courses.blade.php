@@ -13,9 +13,9 @@
     <!--  Demos -->
 <main id="main">
     <div class="mycontainer">
-        <img src="/photos/share/123.jpg" alt="Nature" style="width:100%;">
+        <img src="/photos/share/golf_course.jpg" alt="Nature" style="width:100%;">
           <div class="text-block">
-            <h4 style="color: white; font-weight: 700;">Golf Courses</h4>
+            <h4 style="color: white; font-weight: 700;  padding-top: 15px;">Golf Courses</h4>
            <!--  <p style="color: white;">What a beautiful sunrise</p> -->
          </div>
     </div>

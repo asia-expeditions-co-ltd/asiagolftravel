@@ -19,11 +19,25 @@
  <!--==========================
       About Us Section
     ============================-->
+    @if($country->id==30)
+    <?php $dataimg='angkor.jpg'; ?>
+    @elseif($country->id==122)
+    <?php $dataimg='myanmar.jpg'; ?>
+    @elseif($country->id==30)
+    <?php $dataimg='angkor.jpg'; ?>
+    @elseif($country->id==206)
+    <?php $dataimg='vietnam.jpg'; ?>
+    @elseif($country->id==207)
+    <?php $dataimg='thailand.jpg'; ?>
+    @elseif($country->id==175)
+    <?php $dataimg='laos.jpg'; ?>
+    @endif
+
 
 <div class="mycontainer">
-  <img src="/photos/share/images.jpg" alt="Nature" style="width:100%;">
+  <img src="/photos/share/{{$dataimg }}" alt="Nature" style="width:100%;">
   <div class="text-block">
-    <h2 style="color: white;font-weight: 700;">Destinations</h2>
+    <h2 style="color: white;font-weight: 700; padding-top: 15px;">Destinations <?php echo $country->id; ?></h2>
    <!--  <p style="color: white;">What a beautiful sunrise</p> -->
  </div>
 
@@ -78,7 +92,7 @@
                   <div class="card-body" style="padding: 0.15rem; margin-left: 10px;">
 </a>
             
-                  <p style="color: blue;">{{$data->province->province_name}}</p>
+                  <p style="color: #37ff48; position: absolute; margin-top: -32px;background-color: #0000004f;">{{$data->province->province_name}}</p>
                   <p>{{$data->supplier_name}}</p>
                   <div style="height: 72px; overflow: hidden;">                
                     {!! isset($data->description) ? $data->description : '' !!}    
@@ -103,7 +117,7 @@
     <section id="" class="conme" style="margin-top:0px;">
       <div class="container">
           <header class="section-header">
-          <h3>Top Golf Tours & Packages In {{$country->country_name}}</h3>
+          <h3>Top Tours & golf Packages In {{$country->country_name}}</h3>
         </header>
       <div class="row">
 

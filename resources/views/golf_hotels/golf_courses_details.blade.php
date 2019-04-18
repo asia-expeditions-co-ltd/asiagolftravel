@@ -14,7 +14,7 @@
     <div class="mycontainer">
   <img src="/photos/share/hotel-hilton-mandalay-myanmar.jpg" alt="Nature" style="width:100%;">
   <div class="text-block">
-    <h4 style="color: white; font-weight: 700;">{{ isset($tour->country) ? $tour->country->country_name: ''}}/
+    <h4 style="color: white; font-weight: 700; padding-top: 15px;">{{ isset($tour->country) ? $tour->country->country_name: ''}}/
 {{isset($tour->province) ? $tour->province->province_name: ''}}/
 {{isset($tour->title) ? $tour->title: ''}}</h4>
    <!--  <p style="color: white;">What a beautiful sunrise</p> -->

@@ -15,7 +15,7 @@
 <div class="mycontainer">
   <img src="/photos/share/Thiripyitsaya Sanctuary Resort.jpg" alt="Nature" style="width:100%;">
   <div class="text-block">
-    <h4 style="color: white; font-weight: 700;">Hotels and Resorts</h4>
+    <h4 style="color: white; font-weight: 700; padding-top: 15px;">Hotels and Resorts</h4>
    <!--  <p style="color: white;">What a beautiful sunrise</p> -->
  </div>
 

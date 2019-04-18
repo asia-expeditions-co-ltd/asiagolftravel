@@ -27,14 +27,27 @@
       About Us Section
 
     ============================-->
+     @if($data->country_id==30)
+    <?php $dataimg='angkor.jpg'; ?>
+    @elseif($data->country_id==122)
+    <?php $dataimg='myanmar.jpg'; ?>
+    @elseif($data->country_id==30)
+    <?php $dataimg='angkor.jpg'; ?>
+    @elseif($data->country_id==206)
+    <?php $dataimg='vietnam.jpg'; ?>
+    @elseif($data->country_id==207)
+    <?php $dataimg='thailand.jpg'; ?>
+    @elseif($data->country_id==175)
+    <?php $dataimg='laos.jpg'; ?>
+    @endif
 
     <div class="mycontainer">
 
-  <img src="/photos/share/images.jpg" alt="Nature" style="width:100%;">
+  <img src="/photos/share/{{$dataimg}}" alt="Nature" style="width:100%;">
 
   <div class="text-block">
 
-    <h4 style="color: white; font-size: 30px;font-weight: 700;">Destinations</h4>
+    <h4 style="color: white; font-size: 30px;font-weight: 700; padding-top: 15px;">Destinations</h4>
 
    <!--  <p style="color: white;">What a beautiful sunrise</p> -->
 

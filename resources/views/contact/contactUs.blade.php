@@ -19,7 +19,7 @@
     ============================-->
      <main id="main" style="">
           <div class="mycontainer">
-  <img src="/photos/share/download.jpg" alt="Nature" style="width:100%;">
+  <img src="/photos/share/nyanmarcon.jpg" alt="Nature" style="width:100%;">
   <div class="text-block">
     <h4 style="color: white; font-size:30px; font-weight: 700;">Contact Us</h4>
     <p style="color: white; font-weight: 700;">Destinations Golf Holiday Inquiry Form</p>

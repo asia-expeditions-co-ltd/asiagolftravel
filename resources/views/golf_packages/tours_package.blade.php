@@ -20,9 +20,9 @@
 <main id="main">
         
       <div class="mycontainer">
-          <img src="/photos/share/download.jpg" alt="Nature" style="width:100%;">
+          <img src="/photos/share/tpurs_golf.jpg" alt="Nature" style="width:100%;">
             <div class="text-block">
-              <h4 style="color: white; font-weight: 700;">Tours and Golf Packages</h4>
+              <h4 style="color: white; font-weight: 700; padding-top: 15px;">Tours and Golf Packages</h4>
              <!--  <p style="color: white;">What a beautiful sunrise</p> -->
            </div>
       </div>

@@ -30,7 +30,7 @@ class Country extends Model
        return $data;
   
     }
-        public static function getgolf_t(){
+    public static function getgolf_t(){
                 $data = DB::table('tbl_tours as tour')
     ->select(DB::Raw('tour.country_id as c_id ,ct.country_name ,ct.id , count(country_id) as total '))->
     groupBy(DB::raw('(c_id),(ct.country_name),(ct.id)'))
@@ -43,7 +43,7 @@ class Country extends Model
   
     }
 
-      public static function getgolf_r(){
+    public static function getgolf_r(){
              $data = DB::table('tbl_tours as tour')
     ->select(DB::Raw('tour.country_id as c_id ,ct.country_name ,ct.id , count(country_id) as total '))->
     groupBy(DB::raw('(c_id),(ct.country_name),(ct.id)'))
@@ -52,6 +52,17 @@ class Country extends Model
     ->where(['tour.type'=>3,'tour.status'=>1])
     ->get();
 
+       return $data;
+  
+    }
+
+    public static function getdes_all(){
+             $data = DB::table('tbl_tours')
+    ->join('country', 'tbl_tours.country_id', '=', 'country.id')
+    ->where(['tbl_tours.status'=>1])
+    ->select("country.*")
+    ->groupBy('tbl_tours.country_id')
+    ->get();
        return $data;
   
     }

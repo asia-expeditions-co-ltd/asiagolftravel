@@ -44,10 +44,23 @@
 @include('include.menu')
 
   <!--   ============================-->
+   @if($tour->country_id==30)
+    <?php $dataimg='angkor.jpg'; ?>
+    @elseif($tour->country_id==122)
+    <?php $dataimg='myanmar.jpg'; ?>
+    @elseif($tour->country_id==30)
+    <?php $dataimg='angkor.jpg'; ?>
+    @elseif($tour->country_id==206)
+    <?php $dataimg='vietnam.jpg'; ?>
+    @elseif($tour->country_id==207)
+    <?php $dataimg='thailand.jpg'; ?>
+    @elseif($tour->country_id==175)
+    <?php $dataimg='laos.jpg'; ?>
+    @endif
 
 <div class="mycontainer">
 
-  <img src="/photos/share/download.jpg" alt="Nature" style="width:100%;">
+  <img src="/photos/share/{{$dataimg}}" alt="Nature" style="width:100%;">
 
   <div class="text-block">
 

@@ -9,3 +9,6 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+*.php
+app/component/Content.php
+app/component/Content.php

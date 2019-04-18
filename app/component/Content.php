@@ -18,7 +18,7 @@ class Content
 
 	public static $UrlBase = '/home3/asiagolf/public_html/asiagolftravel';
 
-	public static $webUrl = 'http://asiagolftravel.com';
+	public static $webUrl = '';
 	public static $Urltak = 'http://takemetoburma.com';
 
 
