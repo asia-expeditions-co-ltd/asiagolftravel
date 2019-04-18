@@ -95,7 +95,8 @@
                   <p style="color: #37ff48; position: absolute; margin-top: -32px;background-color: #0000004f;">{{$data->province->province_name}}</p>
                   <p>{{$data->supplier_name}}</p>
                   <div style="height: 72px; overflow: hidden;">                
-                    {!! isset($data->description) ? $data->description : '' !!}    
+                    <!-- {!! isset($data->description) ? $data->description : '' !!} -->
+                    {!! str_limit(strip_tags($data->description),88)!!}    
                   </div >              
                     <a href="{{route('supDetails')}}?id={{$data->id}}">
                     <center>

@@ -49,7 +49,7 @@
 
               Anawrahtar Road,Pazundaung Township,Yangon 11171,Myanmar (Burma)<br>
 
-              <strong>Phone:</strong> <!-- +95 (1) 200 401 / (9) 506 2644 --> <br>
+              <strong>Phone:</strong> +95 (9) 401 533 484 <br>
 
               <strong>Email:</strong> info@asiagolftravel.com<br>
 
@@ -117,7 +117,7 @@
 
       <div class="copyright">
 
-        &copy; Copyright 2019 <strong>Asia Golf Travel</strong>. All Rights Reserved
+        &copy; Copyright 2019 <strong>Asia Golf Travel</strong>
 
       </div>
 

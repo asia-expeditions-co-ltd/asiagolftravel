@@ -41,7 +41,7 @@
             <div class="contact-address">
               <i style="font-size: 30px;color: #18d26e;" class="ion-ios-location-outline"></i>
               <h3 >Address</h3>
-              <address>E6, No 4, Anawrahtar Road, Pazundaung Township, Yangon 11171, Myanmar (Burma)</address>
+              <address>Anawrahtar Road, Pazundaung Township, Yangon 11171, Myanmar (Burma)</address>
             </div>
           </div>
 
@@ -50,7 +50,7 @@
             <div class="contact-phone" >
               <i style="font-size: 30px;color: #18d26e;" class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+95 (1) 200 401 / (9) 506 2644 </a></p>
+              <p><a href="tel:+155895548855">+95 (1) xxx xxx / (9) xxx xxx </a></p>
             </div>
           </div>
 
@@ -58,7 +58,7 @@
             <div class="contact-email">
               <i style="font-size: 30px;color: #18d26e;" class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="">asiagolftravel.com</a></p>
+              <p><a href="">info@asiagolftravel.com</a></p>
             </div>
           </div>
 
