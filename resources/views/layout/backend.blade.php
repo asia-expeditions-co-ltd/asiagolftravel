@@ -45,6 +45,7 @@
     <script type="text/javascript" src="{{asset('adminlte/js/delController.js')}}"></script>
 
     <script type="text/javascript" src="{{asset('adminlte/js/admin.js')}}"></script>
+   
 
 </head>
 
