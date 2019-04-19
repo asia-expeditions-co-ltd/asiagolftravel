@@ -7,7 +7,7 @@
 
       @if(isset($tour->photo)? $tour->photo:'' )
            <div class="item wow bounceInUp" data-wow-duration="1.4s" style="">
-              <div class="card"  id="card" >
+              <div class=""  id="card" >
                 <img class="img-fluid" src="{{Content::urlImage($tour->photo, '/photos/share/')}}"/>
 
               </div>
@@ -18,7 +18,7 @@
                 @foreach($gallerys as $gal)
            
             <div class="item wow bounceInUp" data-wow-duration="1.4s" style="">
-              <div class="card" id="card">
+              <div class="" id="card">
                  <img  class="img-fluid cardimg" src="{{Content::urlImage($gal, '/photos/share/')}}" />  
               </div>
             </div>

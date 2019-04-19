@@ -21,6 +21,15 @@ $(function(){
         readURL(this, 'blah');
         $("#blah").show();
     });
+    // add new
+      $("#choosImgp, #blahp").click(function(){
+       $("#imgInpp").click();
+    });
+    $("#imgInpp").change(function(){
+        readURL(this, 'blahp');
+        $("#blahp").show();
+    });
+    // end add
 
     $("#choosFlag, #blahFlag").click(function(){
         $("#imgFlag").click();

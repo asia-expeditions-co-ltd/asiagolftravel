@@ -71,6 +71,23 @@ use \App\component\Comtent;?>
 				            </div>
 				            <div class="clearfix"></div><br>
 				            <div class="col-md-12">
+				    			<label>Picture of Country</label>
+				    			<div class="row">
+				    				<hr style="margin-top: 0px; margin-bottom: 4px;">
+				    			</div>
+				    			<a id="choosImgp" href="javascript:void(0)">Choose Image</a>
+					        	<input name="picture" type='file' id="imgInpp" style="display: none;" />
+					        	<center>
+					        		<input type="hidden" name="old_imagep" value="{{$con->country_picture}}">
+							    	<?php
+					        			$name = ($con->country_picture != '' ? '/photos/share/'.$con->country_picture : '#');
+					        			$action = ($con->country_picture != '' ? '' : 'none');
+					        		?>
+								    	<img class="img-responsive" id="blahp" src="{{$name}}" style="display: {{$action}}; cursor: pointer;"/>
+							    </center>
+				            </div>
+				            <div class="clearfix"></div><br>
+				            <div class="col-md-12">
 				    			<label>Flag</label>
 				    			<div class="row">
 				    				<hr style="margin-top: 0px; margin-bottom: 4px;">

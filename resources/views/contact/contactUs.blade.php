@@ -19,9 +19,9 @@
     ============================-->
      <main id="main" style="">
           <div class="mycontainer">
-  <img src="/photos/share/nyanmarcon.jpg" alt="Nature" style="width:100%;">
+  <img src="/photos/share/myanmar.jpg" alt="Nature" style="width:100%;">
   <div class="text-block">
-    <h4 style="color: white; font-size:30px; font-weight: 700;">Contact Us</h4>
+    <h4 style="color: white; font-size:30px; font-weight: 700; margin-top: 15px;">Contact Us</h4>
     <p style="color: white; font-weight: 700;">Destinations Golf Holiday Inquiry Form</p>
  </div>
 
@@ -50,7 +50,7 @@
             <div class="contact-phone" >
               <i style="font-size: 30px;color: #18d26e;" class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+95 (1) xxx xxx / (9) xxx xxx </a></p>
+              <p><a href="tel:+155895548855">+95 (9) 401 533 484  </a></p>
             </div>
           </div>
 
