@@ -13,8 +13,6 @@ use \App\Mail\Requesttravel;
 
 class SubscribeController extends Controller
 {
-
-
      public function subscribe(Request $req){
         $dataip = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']));
 
@@ -38,10 +36,10 @@ class SubscribeController extends Controller
                 $adds->timezone       = $dataip['geoplugin_timezone'];
         
                 $adds->save();
-                return back()->with(['message' => 'Subscribe Success']);
+                return back()->with(['messages' => 'Subscribe Success']);
             }
             else{
-                return back()->with(['message' => 'Your email already exits', 'status' => 0])->withInput($req->all());   
+                return back()->with(['messages' => 'Your email already exits', 'status' => 0])->withInput($req->all());   
             }
         }
 
