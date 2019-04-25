@@ -57,13 +57,13 @@ class Country extends Model
     }
 
     public static function getdes_all(){
-             $data = DB::table('tbl_tours')
+    return    $data = DB::table('tbl_tours')
     ->join('country', 'tbl_tours.country_id', '=', 'country.id')
     ->where(['tbl_tours.status'=>1])
     ->select("country.*")
     ->groupBy('tbl_tours.country_id')
     ->get();
-       return $data;
+       
   
     }
 }
