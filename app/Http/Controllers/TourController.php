@@ -108,6 +108,9 @@ class TourController extends Controller
 
                     $gallery = time().'-'.$tmpGallary->getClientOriginalName();
 
+                    $gallery = str_slug(time()."_".$tmpGallary->getClientOriginalName(), "_").'.'.$tmpGallary->getClientOriginalExtension();
+
+
                     $imgb = Image::make($tmpGallary->getRealPath())->fit(1024, 768);
 
                     $gimg = Image::make($tmpGallary->getRealPath())->fit(400, 270);
@@ -126,7 +129,9 @@ class TourController extends Controller
 
                 $image = $req->file('image');
 
-                $photo = time().'-'.$image->getClientOriginalName();
+                // $photo = time().'-'.$image->getClientOriginalName();
+
+                $photo = str_slug(time()."_".$image->getClientOriginalName(), "_").'.'.$image->getClientOriginalExtension();
 
                 $imgbig = Image::make($image->getRealPath())->fit(1024, 768);
 
