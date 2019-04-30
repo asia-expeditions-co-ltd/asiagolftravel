@@ -30,3 +30,33 @@
       </div>
     </div>
 </section><!-- #intro -->
+<!-- add new for under slide -->
+  <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-4 col-sm-4 box">
+            <a href="{{route('getgolf_courses')}}">
+               <img src="/photos/share/golfcourse.png">
+            <h4 class="title"><a>Golf Courses</a></h4>
+          </a>
+         
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4 box box-bg">
+            <a href="{{route('gettp')}}">
+              <img src="/photos/share/gofl&tours.png">
+              <h4 class="title"><a>Golf And Tours Packages</a></h4>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4 box">
+            <a href="{{route('gethotel_resorts')}}">
+              <img src="/photos/share/hotel&resort.png">
+              <h4 class="title"><a>Hotels And Resorts</a></h4>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #featured-services -->
