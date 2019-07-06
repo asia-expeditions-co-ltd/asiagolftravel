@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+    <meta name="google-site-verification" content="VdRpo5Oa4WMJ54J3jMzBsSRS192mIbMRAQ-78eoM4MY" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -30,10 +31,8 @@
   <!-- Main Stylesheet File -->
   <link href="{{asset('asseter/css/style.min.css')}}" rel="stylesheet">
   <link href="{{asset('css/gofont.min.css')}}" rel="stylesheet">
+  <link href="{{asset('css/datepicker.min.css')}}" rel="stylesheet" type="text/css" />
 
-  
-
-    <script type="text/javascript" src="{{asset('js/script.min.js')}}"></script>
     <!-- <script type="text/javascript" src="{{asset('js/script.js')}}"></script> -->
      <script type="text/javascript">
       $.ajaxSetup({
@@ -41,6 +40,9 @@
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
     }
 });</script>
+
+<script type="text/javascript" src="{{asset('js/script.min.js')}}"></script>
+<script src="{{asset('/js/datepicker.min.js')}}" type="text/javascript"></script> 
 
   <!-- =======================================================
     Theme Name: BizPage
@@ -57,7 +59,7 @@
   @yield('content')
 
 
-  
+
   </body>
 
 </html>

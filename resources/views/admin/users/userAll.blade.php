@@ -66,15 +66,18 @@
 		            <tr>
 		      
  
+						
+		        
+		            	<td>{{$user->fullname}}
+		            		@if($user->isOnline())
+		            			<i style="color: #077ef5;" class="fa fa-eye"></i>							
+		            		@endif
+		            	</td>
+		            	
 
-		            	@if(Auth::user()->id == $user->id)
-
-		            	<td style="color: red;">{{$user->fullname}}</td>
-		            	@else
-		            	<td>{{$user->fullname}}</td>
-		            	@endif
-
-		            	<td>{{$user->email}}</td>
+		            	<td>{{$user->email}}
+		            		
+		            	</td>
 
 		            	<td>{{$user->phone}}</td>
 

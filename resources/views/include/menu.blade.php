@@ -2,7 +2,9 @@
       <div class="header"> 
          <div class="txttop">
              <i class="fa fa-phone"></i>&nbsp; +95 (9) 401 533 484
-             <i class="fa fa-envelope-o"></i>&nbsp; info@asiagolftravel.com 
+             <i class="fa fa-envelope-o"></i>&nbsp; info@asiagolftravel.com
+             <i class="fa fa-battery-half" aria-hidden="true"></i>
+<span class="sr-only">Battery level: 80%</span> 
          </div> 
       </div>
 <header id="header">

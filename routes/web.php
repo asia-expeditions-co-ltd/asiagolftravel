@@ -15,7 +15,7 @@
 //    return view('hello'); lodlogin
 //
 //});
-
+Route::get('/sitemap.xml', 'SitemapController@index');
 Route::get('login', 'UserController@getLogin')->name('getLogin');
 Route::post('doLogin', 'UserController@doLogin')->name('doLogin');
 Route::get('signout', 'UserController@signout')->name('signout');

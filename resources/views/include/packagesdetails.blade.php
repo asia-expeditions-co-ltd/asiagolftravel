@@ -106,11 +106,11 @@
 
                 <div class="col-md-12">
 
-                  <div class="input-group form-group">
+                  <div class="input-group form-group date">
                       <span class="input-group-btn">
                         <button class="btn btn-secondary" type="button"><i class="fa fa-calendar"></i></button>
                       </span>
-                      <input type="date" name="date" class="form-control textbox_color" placeholder="Date Check Out" required="">
+                      <input type="text"  name="date" class="form-control textbox_color" placeholder="Date Check Out" required="">
                   </div>
 
                   <div class="form-group">
@@ -362,6 +362,14 @@ function openPage(pageName,elmnt,color) {
 
 document.getElementById("defaultOpen").click();
 
+  $('.input-group.date').datepicker({
+    autoclose: true,
+    todayHighlight: true,
+    clearBtn: true,
+    datesDisabled: ['06/06/2019'],
+  });
+
+   
 </script>
 
 

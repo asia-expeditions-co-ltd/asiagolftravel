@@ -55,11 +55,11 @@
                         {{csrf_field()}}            
                                
                         <div class="col-md-12">
-                            <div class="input-group form-group">
+                            <div class="input-group form-group date">
                                 <span class="input-group-btn">
                                     <button class="btn btn-secondary" type="button"><i class="fa fa-calendar"></i></button>
                                 </span>
-                                <input type="date" name="date" class="form-control textbox_color" placeholder="Date Check Out" required="">
+                                <input type="text" name="date" class="form-control textbox_color" placeholder="Date Check Out" required="">
                             </div>
                             <div class="form-group">
                                 <div class="row">                                                                   
@@ -216,6 +216,22 @@ function openPage(pageName,elmnt,color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").onclick('click');
+ $('.input-group.date').datepicker({
+    autoclose: true,
+    todayHighlight: true,
+    clearBtn: true,
+    datesDisabled: ['06/06/2019'],
+  });
+
+
+// var now = new Date();
+// var daysOfYear = [];
+// for (var d = new Date(2012, 0, 1); d <= now; d.setDate(d.getDate() + 1)) {
+//     var date = daysOfYear.push(new Date(d));
+   
+//     console.log(now);
+// }
+
 </script>
 
 @include('include.footer')
