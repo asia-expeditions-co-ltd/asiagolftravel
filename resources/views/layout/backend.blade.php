@@ -50,7 +50,17 @@
 </head>
 
 <body>
+ @if(\Auth::User()->isOnline())
 
+    <?php $today  = new DateTime('now', new DateTimeZone('Asia/bangkok'));
+          $ft     =  $today->format('y-m-d H:i:s ');
+
+            $add_active              =  \App\User::find(\Auth::User()->id);
+            $add_active->updated_at  =  date('Y-m-d h:i:s' );
+            $add_active->last_active =  $ft;
+            $add_active->save();  
+    ?>
+  @endif
 
     @yield('content')
 <a href="#" class="back-to-top" style=""><i class="fa fa-chevron-up"></i></a>
