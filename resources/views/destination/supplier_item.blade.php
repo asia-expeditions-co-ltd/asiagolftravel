@@ -12,44 +12,37 @@
  <!--==========================
       About Us Section
     ============================-->
-    @foreach($suppitetm as $data)
+@foreach($suppitetm as $data)
   <div class="mycontainer">
     <img src="/photos/share/{{$data->country->country_picture}}" alt="Nature" style="width:100%;">
     <div class="text-block">
       <h4 style="color: white; font-size: 30px;font-weight: 700;padding-top: 15px;">Destinations</h4>
    </div>
   </div>
-
-
     <section id="about">
       <div class="container">
-
         <header class="section-header">
-          <h3>{{ isset($data->supplier_name) ? $data->supplier_name : '' }}</h3>
-       
+          <h3>{{ isset($data->supplier_name) ? $data->supplier_name : '' }}</h3>       
         </header>
-
         <div class="row about-cols">
 
           <div class="col-md-12 wow fadeInUp">
-            <div class="about-col">
-              <div class="img" style="text-align: center;">
+            <div class="about-col">          
 
-                <img src="/photos/share/thumbs/{{ $data->supplier_photo}}" alt="" class="img-relative">
-             
-              </div>
+              <center>            
+                <div class="col-md-8 col-sm-12"> 
+                  <div class="member">
+                    <img src="/photos/share/thumbs/{{ $data->supplier_photo}}" class="img-fluid" alt="">      
+                  </div> 
+                </div>
+              </center>
+
               <h2 class="title"><a href="#">Information</a></h2>
-              <p>
-              {!! isset($data->description) ? $data->description: '' !!}
-              </p>
+              <p>{!! isset($data->description) ? $data->description: '' !!}</p>
             </div>
           </div>
- 
-  
-
         </div>
-
-            @endforeach 
+  @endforeach 
     </div>
     </section><!-- #about -->
 

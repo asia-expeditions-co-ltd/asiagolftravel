@@ -22,11 +22,9 @@
       <div class="mycontainer">
           <img src="/photos/share/tpurs_golf.jpg" alt="Nature" style="width:100%;">
             <div class="text-block">
-              <h4 style="color: white; font-weight: 700; padding-top: 15px;">Tours and Golf Packages</h4>
-             <!--  <p style="color: white;">What a beautiful sunrise</p> -->
+              <h4 style="color: white; font-weight: 700; padding-top: 15px;">Tours and Golf Packages</h4>             
            </div>
-      </div>
-      <!-- start selection -->
+      </div>     
     <section id="portfolio"  class="section-bg" >
       <div class="container" id="myDIV" >
 
@@ -34,7 +32,7 @@
           <h3 class="section-title">Tours and Golf Packages</h3>
         </header>
 
-    <div class="row">
+        <div class="row">
           <div class="col-lg-12">
             <ul id="portfolio-flters" class="country_tourpackage">
                @foreach($data_cunt as $dataitem)
@@ -42,30 +40,19 @@
                @endforeach 
             </ul>
           </div>
-    </div>
-          <div class="row" id="addtourpackage" ></div>
-
-   
-
-<div id="more"></div>
-     
-
+        </div>
+          <div class="row" id="addtourpackage" ></div>   
+          <div id="more"></div>   
       </div>
- </section>
-
-    <!-- end selection -->
-
+    </section>
 </main>
 
 
-
-     <script type="text/javascript">
-       $(document).ready(function(){
- $("#{{$dataitem->id}}").trigger('click'); 
-  $(".tours").addClass('menu-active');
-});
-     </script>
-
+<script type="text/javascript">
+    $(document).ready(function(){
+     $("#{{$dataitem->id}}").trigger('click'); 
+      $(".tours").addClass('menu-active');
+    });
+</script>
 @include('include.footer')
-
 @endsection

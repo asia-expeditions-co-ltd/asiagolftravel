@@ -75,7 +75,7 @@ class Tour extends Model
     groupBy(\DB::raw('(p_id),(pro.id)'))
     ->orderby('total', 'desc')
     ->join('province as pro', 'pro.id', '=', 'tour.province_id')
-    ->where(['type'=>1,'status'=>1])->limit(6)
+    ->where(['type'=>1,'status'=>1])->limit(8)
     ->get();
 
        return $data;

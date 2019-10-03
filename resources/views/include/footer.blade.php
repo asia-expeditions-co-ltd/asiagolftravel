@@ -6,129 +6,52 @@
   ============================-->
 
   <div class="intro-container">
-
   <footer id="footer">
-
     <div class="footer-top">
-
       <div class="container">
-
         <div class="row">
-
-
-
           <div class="col-lg-4 col-md-6 footer-links">
-
             <h4>Useful Links</h4>
-
             <ul>
-
               <li><i class="ion-ios-arrow-right"></i> <a href="/">Home</a></li>
-
               <li><i class="ion-ios-arrow-right"></i> <a href="#">DESTINATIONS</a></li>
-
               <li><i class="ion-ios-arrow-right"></i> <a href="{{route('getgolf_courses')}}">GOLF COURSES</a></li>
-
               <li ><i class="ion-ios-arrow-right"></i> <a href="{{route('gettp')}}">GOLF TOURS & PACKAGES</a></li>
-
               <li><i class="ion-ios-arrow-right"></i> <a href="{{route('gethotel_resorts')}}">HOTELS & RESORTS</a></li>
-
               <li><i class="ion-ios-arrow-right"></i><a href="{{route('getContact')}}">CONTACT</a></li>
-
             </ul>
-
           </div>
-
-
-
           <div class="col-lg-4 col-md-6 footer-contact">
-
             <h4>Contact Us</h4>
-
             <p>
-
               Anawrahtar Road,Pazundaung Township,Yangon 11171,Myanmar (Burma)<br>
-
               <strong>Phone:</strong> +95 (9) 401 533 484 <br>
-
               <strong>Email:</strong> info@asiagolftravel.com<br>
-
             </p>
-
-
-
-  
-
           </div>
-
-
-
           <div class="col-lg-4 col-md-6 footer-newsletter">
-
-            <h4>Our Newsletter</h4>
-
-          
-
+            <h4>Our Newsletter</h4>       
             <p>Enter your email to get news udpate</p>
-
-
-
             @if (session('message'))
-
-  <script type="text/javascript"> alert('{{ session("message")}}');</script>
-
-@endif
-
-
-
-            <form action="{{route('subscribe')}}" method="post">
-
-             
-
+              <script type="text/javascript"> alert('{{ session("message")}}');</script>
+            @endif
+            <form action="{{route('subscribe')}}" method="post">           
              {{csrf_field() }}
-
               <input type="hidden" name="subscribe" value="subscriber">
-
                 <input  name="email" type="email" placeholder="example@gmail.com" aria-label="email" required="">
-
               <input type="submit"  value="Subscribe" >
-
-          
-
-           
-
             </form>
-
-  
-
           </div>
-
-
-
         </div>
-
       </div>
-
     </div>
-
-
-
     <div class="container">
-
       <div class="copyright">
-
         &copy; Copyright 2019 <strong>Asia Golf Travel</strong>
-
       </div>
-
       <div class="credits">
-
-
-
       </div>
-
     </div>
-
   </footer><!-- #footer -->
 
 

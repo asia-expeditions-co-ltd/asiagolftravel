@@ -116,7 +116,7 @@
                  
             <div class="item wow bounceInUp" data-wow-duration="1.4s" style="">
               <div class="card">
- <a href="{{route('tourDetails', ['url'=> $tour->slug])}}">
+              <a href="{{route('tourDetails', ['url'=> $tour->slug])}}">
                 <img src="{{Content::urlImage($tour->photo)}}" alt="img" class="img-fluid">
               </a>
                   <div class="card-body" style="padding: 0.15rem; margin-left: 10px;">

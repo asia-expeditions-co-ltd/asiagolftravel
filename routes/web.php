@@ -15,6 +15,13 @@
 //    return view('hello'); lodlogin
 //
 //});
+Route::middleware('optimizeImages')->group(function () {
+    // all images will be optimized automatically
+    Route::get('/upload', 'UploadController@index');
+});
+Route::post('/photos', 'PhotosController@store')
+    ->middleware('optimizeImages');
+
 Route::get('/sitemap.xml', 'SitemapController@index');
 Route::get('login', 'UserController@getLogin')->name('getLogin');
 Route::post('doLogin', 'UserController@doLogin')->name('doLogin');

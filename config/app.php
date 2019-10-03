@@ -169,8 +169,8 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
                 
-   Intervention\Image\ImageServiceProvider::class,
-
+    Intervention\Image\ImageServiceProvider::class,
+    Spatie\LaravelImageOptimizer\ImageOptimizerServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -238,6 +238,7 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'Widget'       => Arrilot\Widgets\Facade::class,
         'AsyncWidget'  => Arrilot\Widgets\AsyncFacade::class,
+        'ImageOptimizer' => Spatie\LaravelImageOptimizer\ImageOptimizerFacade::class,
 
       
 

@@ -104,6 +104,13 @@
         $(".home").addClass('menu-active');
   });
   </script>
-
+<form action="/upload" enctype="multipart/form-data" method="POST">
+  {{ csrf_field() }}
+  <div class="form-group">
+    <label for="">Photo</label>
+    <input class="form-control" name="photo" type="file" />
+    <button type="submit">Upload</button>
+  </div>
+</form>
 @include('include.footer')
 @endsection

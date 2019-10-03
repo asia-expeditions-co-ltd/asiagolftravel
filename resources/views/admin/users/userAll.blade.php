@@ -63,11 +63,7 @@
 		        	
 		            @foreach($users as $userss)
 
-		            <tr>
-		      
- 
-						
-		        
+		            <tr> 	        
 		            	<td>{{$userss->fullname}}
 
 		            		@if($userss->isOnline())	
@@ -108,7 +104,7 @@
                                         }
                                     }                              
                             ?>
-                                        <div style="font-size: 12px; cursor: pointer;" title="{{date('Y-F-j', strtotime($userss->last_active)).' at '.$dateAt}}">{{isset($day)? $day: ''}}{{isset($hour)? $hour: ''}} {{isset($min)? $min: ''}}</div>
+                                        <div onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';" style="{font-size: 12px; cursor: pointer}" title="{{date('Y-F-j', strtotime($userss->last_active)).' at '.$dateAt}}">{{isset($day)? $day: ''}}{{isset($hour)? $hour: ''}} {{isset($min)? $min: ''}}</div>
 				           	@endif
 
 		            	</td>
@@ -124,7 +120,7 @@
 
 		            	<td style="width: 80px;">{{ date('Y-M-d', strtotime($userss->created_at))}}</td>
 
-		            	<td style="width: 80px;" class="text-right">	            		
+		            	<td style="width: 80px;" class="text-right">            		
 		            		@if(Auth::user()->role_id == 1)
 
 				    		<a href="{{url('admin/user/edit')}}/{{$userss->id}}" class="btn btn-info btn-xs"><i class="glyphicon glyphicon-edit"></i></a>

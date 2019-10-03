@@ -233,6 +233,7 @@ document.getElementById("defaultOpen").onclick('click');
 // }
 
 </script>
+<?php $data='datepicker' ?>
 
 @include('include.footer')
 

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class ConAsiaEx_tours extends Model
 {
     //
-    protected $connection = 'mysql_third';
+   protected $connection = 'mysql_third';
    protected $table='tours';
 
 
